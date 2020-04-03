@@ -1,0 +1,1 @@
+select title, genre, director_name, actor_name from filmtable inner join film on (filmtable.film = film.id) inner join genre on (film.genre_id = genre.id) inner join director on (filmtable.director = director.id) inner join actor on (filmtable.actor = actor.id);
